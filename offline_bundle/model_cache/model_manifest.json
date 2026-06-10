@@ -1,0 +1,14 @@
+{
+  "registered_local_models": [
+    {
+      "key": "prompt_guard",
+      "repo_id": "LLM-Research/Llama-Prompt-Guard-2-86M",
+      "source": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\LLM-Research\\Llama-Prompt-Guard-2-86M",
+      "target": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\LLM-Research__Llama-Prompt-Guard-2-86M",
+      "mode": "copied",
+      "file_count": 13
+    }
+  ],
+  "downloaded_from_hf": [],
+  "note": "Transfer offline_bundle/model_cache to the 4090D computer and run without external Hugging Face access."
+}

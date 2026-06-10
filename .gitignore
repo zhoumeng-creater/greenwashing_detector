@@ -26,8 +26,8 @@ indexes/*.jsonl
 !indexes/.gitkeep
 
 # Outputs (generated)
-outputs/
-!outputs/EXPERIMENT_RESULTS.md
+# Allow all outputs for cross-machine sync
+!outputs/
 
 # OS
 .DS_Store

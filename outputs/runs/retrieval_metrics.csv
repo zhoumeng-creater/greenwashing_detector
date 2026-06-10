@@ -1,0 +1,9 @@
+claim_id,expected_categories,top_types,recall_at_5,recall_at_10,mrr_at_10
+E001,"absolute_claim,carbon_offset_or_net_zero_risk,vague_general_claim","official_guidance,official_guidance,official_guidance,official_guidance,official_guidance",0,1,0.14285714285714285
+E002,,"official_guidance,official_guidance,official_guidance,official_guidance,official_guidance",1,1,0.0
+E003,"unsubstantiated_claim,vague_general_claim","official_guidance,official_guidance,official_guidance,official_guidance,official_guidance",0,0,0.0
+E004,"absolute_claim,recyclability_ambiguity","official_guidance,recyclability_ambiguity,official_guidance,official_guidance,official_guidance",1,1,0.5
+E005,"carbon_offset_or_net_zero_risk,future_target_overclaim","official_guidance,official_guidance,official_guidance,official_guidance,unsubstantiated_claim",0,0,0.0
+E006,"misleading_comparison,unsubstantiated_claim","official_guidance,official_guidance,unsubstantiated_claim,official_guidance,vague_general_claim",1,1,0.3333333333333333
+E007,certification_ambiguity,"official_guidance,official_guidance,official_guidance,official_guidance,unsubstantiated_claim",0,0,0.0
+E008,,"official_guidance,official_guidance,official_guidance,official_guidance,official_guidance",1,1,0.0

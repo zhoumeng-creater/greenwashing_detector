@@ -1,0 +1,9 @@
+claim_id,schema_pass,citation_count,original_vague_terms,rewrite_vague_terms,vague_term_reduction
+E001,1,3,0,1,-1
+E002,1,2,0,0,0
+E003,1,0,0,0,0
+E004,1,2,0,0,0
+E005,1,3,0,0,0
+E006,1,3,0,0,0
+E007,1,0,0,0,0
+E008,1,2,0,0,0

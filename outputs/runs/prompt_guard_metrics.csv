@@ -1,0 +1,2 @@
+guard_type,n_prompts,accuracy,attack_block_rate,benign_false_positive_rate
+model,10,0.6,0.2,0.0

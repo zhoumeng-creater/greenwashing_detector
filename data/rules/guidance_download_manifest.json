@@ -1,0 +1,32 @@
+[
+  {
+    "source_id": "FTC_SUMMARY",
+    "url": "https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides",
+    "status": "downloaded",
+    "path": "/Users/zhoumeng/Library/CloudStorage/OneDrive-CoventryUniversity/中传/大三下/神经网络与深度学习/期末/greenwashing_detector/data/rules/FTC_SUMMARY.html"
+  },
+  {
+    "source_id": "FTC_GREEN_GUIDES",
+    "url": "https://www.ftc.gov/news-events/topics/truth-advertising/green-guides",
+    "status": "downloaded",
+    "path": "/Users/zhoumeng/Library/CloudStorage/OneDrive-CoventryUniversity/中传/大三下/神经网络与深度学习/期末/greenwashing_detector/data/rules/FTC_GREEN_GUIDES.html"
+  },
+  {
+    "source_id": "CMA_GREEN_CLAIMS",
+    "url": "https://www.gov.uk/government/publications/green-claims-code-making-environmental-claims",
+    "status": "downloaded",
+    "path": "/Users/zhoumeng/Library/CloudStorage/OneDrive-CoventryUniversity/中传/大三下/神经网络与深度学习/期末/greenwashing_detector/data/rules/CMA_GREEN_CLAIMS.html"
+  },
+  {
+    "source_id": "EU_GREEN_CLAIMS",
+    "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+    "status": "downloaded",
+    "path": "/Users/zhoumeng/Library/CloudStorage/OneDrive-CoventryUniversity/中传/大三下/神经网络与深度学习/期末/greenwashing_detector/data/rules/EU_GREEN_CLAIMS.html"
+  },
+  {
+    "source_id": "ASA_ENV_CLAIMS",
+    "url": "https://www.asa.org.uk/advice-online/environmental-claims-general.html",
+    "status": "downloaded",
+    "path": "/Users/zhoumeng/Library/CloudStorage/OneDrive-CoventryUniversity/中传/大三下/神经网络与深度学习/期末/greenwashing_detector/data/rules/ASA_ENV_CLAIMS.html"
+  }
+]

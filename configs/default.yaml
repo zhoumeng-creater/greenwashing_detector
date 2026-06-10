@@ -1,0 +1,90 @@
+project:
+  name: greenwashing_detector
+  seed: 42
+
+paths:
+  rules_dir: data/rules
+  raw_dir: data/raw
+  processed_dir: data/processed
+  eval_dir: data/eval_claims
+  index_path: indexes/rules.faiss
+  metadata_path: indexes/metadata.jsonl
+  outputs_dir: outputs
+  model_cache_dir: offline_bundle/model_cache
+
+network:
+  # Set to https://hf-mirror.com on mainland-China networks if direct Hugging Face access is unstable.
+  hf_endpoint: ""
+  # Optional pip mirror. Example: https://pypi.tuna.tsinghua.edu.cn/simple
+  pip_index_url: ""
+  # Disable SSL verification when HF is blocked by network-level interception (e.g. corporate proxy, GFW).
+  disable_ssl_verify: true
+
+models:
+  generator: Qwen/Qwen3-8B
+  embedding: Qwen/Qwen3-Embedding-0.6B
+  embedding_fallback: BAAI/bge-m3
+  detector: climatebert/environmental-claims
+
+optional_models:
+  # Optional safety model. It is used only when safety.prompt_guard_mode is
+  # "model" or when "auto" finds a local cached copy.
+  prompt_guard: LLM-Research/Llama-Prompt-Guard-2-86M
+
+generation:
+  max_new_tokens: 2000
+  temperature: 0.15
+  top_p: 0.85
+  load_in_4bit: false
+  retry_json: true
+
+safety:
+  prompt_guard_mode: auto
+  prompt_guard_threshold: 0.5
+
+retrieval:
+  top_k: 8
+  chunk_size_chars: 1400
+  chunk_overlap_chars: 180
+  normalize_embeddings: true
+
+evaluation:
+  risk_levels:
+    - LOW
+    - MEDIUM
+    - HIGH
+    - INSUFFICIENT_EVIDENCE
+  risk_categories:
+    - vague_general_claim
+    - unsubstantiated_claim
+    - absolute_claim
+    - hidden_tradeoff
+    - misleading_comparison
+    - recyclability_ambiguity
+    - carbon_offset_or_net_zero_risk
+    - certification_ambiguity
+    - future_target_overclaim
+    - nature_imagery_mismatch
+  detector_test_size: 500
+
+guidance_sources:
+  - source_id: FTC_SUMMARY
+    title: FTC Environmental Claims Summary of Green Guides
+    jurisdiction: US
+    url: https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides
+  - source_id: FTC_GREEN_GUIDES
+    title: FTC Green Guides
+    jurisdiction: US
+    url: https://www.ftc.gov/news-events/topics/truth-advertising/green-guides
+  - source_id: CMA_GREEN_CLAIMS
+    title: UK CMA Green Claims Code
+    jurisdiction: UK
+    url: https://www.gov.uk/government/publications/green-claims-code-making-environmental-claims
+  - source_id: EU_GREEN_CLAIMS
+    title: European Commission Green Claims
+    jurisdiction: EU
+    url: https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en
+  - source_id: ASA_ENV_CLAIMS
+    title: ASA CAP Environmental Claims General Guidance
+    jurisdiction: UK
+    url: https://www.asa.org.uk/advice-online/environmental-claims-general.html

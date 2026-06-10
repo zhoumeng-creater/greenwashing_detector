@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test / cache
+.pytest_cache/
+
+# Model files (large binaries)
+offline_bundle/model_cache/*/
+!offline_bundle/model_cache/*.json
+
+# Indexes (generated)
+indexes/*.faiss
+indexes/*.jsonl
+!indexes/.gitkeep
+
+# Outputs (generated)
+outputs/
+!outputs/EXPERIMENT_RESULTS.md
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sensitive
+.env
+*.secret

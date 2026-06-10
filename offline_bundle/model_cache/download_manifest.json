@@ -1,0 +1,30 @@
+[
+  {
+    "repo_id": "Qwen/Qwen3-Embedding-0.6B",
+    "local_dir": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\Qwen__Qwen3-Embedding-0.6B",
+    "downloaded_path": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\Qwen__Qwen3-Embedding-0.6B",
+    "file_count": 14,
+    "source": "modelscope"
+  },
+  {
+    "repo_id": "BAAI/bge-m3",
+    "local_dir": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\BAAI__bge-m3",
+    "downloaded_path": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\BAAI__bge-m3",
+    "file_count": 31,
+    "source": "modelscope"
+  },
+  {
+    "repo_id": "climatebert/environmental-claims",
+    "local_dir": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\climatebert__environmental-claims",
+    "downloaded_path": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\climatebert__environmental-claims",
+    "file_count": 10,
+    "source": "hf"
+  },
+  {
+    "repo_id": "Qwen/Qwen3-8B",
+    "local_dir": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\Qwen__Qwen3-8B",
+    "downloaded_path": "D:\\zhoumeng\\coursework\\greenwashing_detector\\offline_bundle\\model_cache\\snapshots\\Qwen__Qwen3-8B",
+    "file_count": 16,
+    "source": "hf"
+  }
+]

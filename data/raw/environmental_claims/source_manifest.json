@@ -1,0 +1,27 @@
+{
+  "dataset": "climatebert/environmental_claims",
+  "source_repository": "https://github.com/dominiksinsaarland/environmental_claims",
+  "huggingface_dataset": "https://huggingface.co/datasets/climatebert/environmental_claims",
+  "downloaded_from": "https://raw.githubusercontent.com/dominiksinsaarland/environmental_claims/main/data/",
+  "download_date": "2026-06-08",
+  "splits": {
+    "train.jsonl": {
+      "rows": 2117,
+      "sha256": "c8210e69f55e8f233ad84741dc44395a9b0f9407c346051218d11f38ba4e5de1"
+    },
+    "dev.jsonl": {
+      "rows": 265,
+      "sha256": "03cdb43c57c1080df4e3c879e51979e47c7bc7214a49f5a6c8a20ab783bc89e2"
+    },
+    "test.jsonl": {
+      "rows": 265,
+      "sha256": "49bc5ed6b2a6d01a9be5ecf900bac94992c9084b5c9fe95ad305ac54343948d8"
+    }
+  },
+  "columns": ["text", "label"],
+  "label_meaning": {
+    "1": "environmental claim",
+    "0": "not an environmental claim"
+  },
+  "note": "These local JSONL files are used before any Hugging Face download attempt, so detector evaluation can run on an offline or firewall-restricted machine."
+}
